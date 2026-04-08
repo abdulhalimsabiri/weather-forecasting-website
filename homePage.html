@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+</head>
+<style>
+    body {
+        background-image: url(44.png);
+     
+
+     }
+     
+    header {
+    
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display:flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    
+}
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 19px;
+    text-decoration: none; 
+    display: inline;  
+    align-items: center;
+    justify-content: space-between; 
+
+    
+}
+.hero {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    background-color: rgba(47, 90, 146, 0.486);
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+}
+.weather {
+    padding: 90px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(232, 212, 153, 0.675);
+    padding: 20px;
+    margin: auto;
+    width: 200px;
+    box-shadow: 0 0 10px gray;
+    direction: rtl;
+}
+
+footer {
+   width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #0b84c5;
+    color: white;
+}
+.search-box {
+ 
+  display:inline;
+  align-items:center;
+  margin-left: auto;
+  background: white;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 90;
+}
+
+.search-box button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+    </style>
+<body>
+    
+
+
+<header>
+        <h1 >د هوا د  وړاندوینی سیستم</h1>
+        <nav>
+        <div class="search-box">
+        <input type="text" placeholder="پلټل...">
+        <!-- <button onclick="searchFunction()">🔍</button> -->
+        </div>
+            <a href="dashboard.html">داشبورد</a>
+            <a href="#">وړاندوینه</a>
+            <a href="#">مخینه</a>
+            <a href="LoginPage.html">ننوتل</a>
+            <!-- <a href="">پلټل</a> -->
+        <button>وګوره</button>
+   
+        </nav>
+       
+   
+    </header>
+
+     <section class="hero">
+        <h2>د هوا د وړاندوینی سیستم ته  ښه راغلاست</h2>
+        <p>اوسنی د هوا  حالات په اسانی سره   وګوره</p>
+        <button>وګوره</button>
+    </section>
+
+
+    <section class="weather">
+        <h2>اوسنی  هوا</h2>
+        <div class="card">
+            <h3>کابل</h3>
+            <p>تودوخه:C°29</p>
+            <p>رطوبت: %40</p>
+            <p>باد: 10 km/h</p>
+            <p>حالت:  لمر</p>
+        </div>
+    </section>
+
+
+
+
+     <footer>
+        <p>© 2026 Weather Forecast System</p>
+    </footer>
+</body>
+</html>
