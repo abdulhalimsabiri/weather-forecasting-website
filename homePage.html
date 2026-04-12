@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="ps">
+<html lang="ps" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-
-</head>
 <style>
     body {
-        background-image: url(44.png);
-     
+    background-image: url(44.png);
+    background-size:100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: auto;
+    height: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+    min-height: 100vh;
+    background-position: center;
+    }
 
-     }
+
      
     header {
     
-    color: rgb(255, 255, 255);
-    padding: 15px;
+    color: rgb(0, 0, 0);
+   
     display:flex;
     justify-content: space-between;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100px;
+    font-weight: 10px;
+    direction: rtl;
+    margin: 1px;
+    padding: 20px;
+    
     
 }
 nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(241, 224, 140);
     margin: 19px;
     text-decoration: none; 
-    display: inline;  
+    display: inline-flexbox;  
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    direction:ltr ; 
 
     
 }
 .hero {
     text-align: center;
     width: 100%;
-    padding: 50px;
-    background-color: rgba(47, 90, 146, 0.486);
+    color: rgb(0, 0, 0);
+   
+    background-color: rgba(11, 59, 123, 0.486);
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: #0077b6;
-    color: white;
-    border: none;
-}
 .weather {
     padding: 90px;
     text-align: center;
@@ -64,19 +71,18 @@ nav a {
 footer {
    width: 100%;
     text-align: center;
-    padding: 15px;
     background: #0b84c5;
     color: white;
 }
 .search-box {
  
-  display:inline;
+  display:initial;
   align-items:center;
   margin-left: auto;
-  background: white;
-  border-radius: 50px;
+  
+  border-radius: 5px;
   padding: 5px;
-  width: 100px;
+  width: 10px;
 
 }
 
@@ -84,7 +90,8 @@ footer {
   border: none;
   outline: none;
   font-size: 14px;
-  width: 90;
+  width: 30;
+ 
 }
 
 .search-box button {
@@ -96,6 +103,7 @@ footer {
 
 
     </style>
+    </head>
 <body>
     
 
@@ -103,16 +111,18 @@ footer {
 <header>
         <h1 >د هوا د  وړاندوینی سیستم</h1>
         <nav>
-        <div class="search-box">
-        <input type="text" placeholder="پلټل...">
-        <!-- <button onclick="searchFunction()">🔍</button> -->
-        </div>
-            <a href="dashboard.html">داشبورد</a>
-            <a href="#">وړاندوینه</a>
-            <a href="#">مخینه</a>
-            <a href="LoginPage.html">ننوتل</a>
-            <!-- <a href="">پلټل</a> -->
         
+        
+        </div>
+            <div class="search-box">
+            <input type="text" placeholder="پلټل د ځای...">
+
+            <a href="dashboard.html">داشبورد</a>
+            <a href=" about us.html">زه موږ په اړه </a>
+            <a href="LoginPage.html">ننوتل</a>
+           
+            <div>
+            <div>
    
         </nav>
        
@@ -122,7 +132,7 @@ footer {
      <section class="hero">
         <h2>د هوا د وړاندوینی سیستم ته  ښه راغلاست</h2>
         <p>اوسنی د هوا  حالات په اسانی سره   وګوره</p>
-        <button>وګوره</button>
+        
     </section>
 
 
@@ -141,7 +151,9 @@ footer {
 
 
      <footer>
-        <p>© 2026 Weather Forecast System</p>
+        
+     <p> © د هوا د وړاندوینی سیستم  ۱۴۰۵  </p>
+        
     </footer>
 </body>
 </html>

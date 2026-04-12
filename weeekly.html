@@ -1,32 +1,53 @@
 <!DOCTYPE html>
-<html lang="ps" dir="ltr">
+<html lang="ps" dir="rtl">
 <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weeekly</title>
+
 <meta charset="UTF-8">
-<title>weeekly_Forecasting</title>
+
 
 <style>
+ 
+  img{
+    width: 100%;
+    height: auto;
+  }
 body {
-    background-image: url(44.png);
-  font-family: sans-serif;
-  margin: 0;
+  background-image: url(44.png);
+  background-size:100%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height:100%;
+  font-size: 1.2rem;
+  max-width: 1500px;
+  overflow-x: hidden;
+  
  
 }
 
-/* Navbar */
+
 .navbar {
- flex-direction: column-reverse;
-  display: flex;
+ 
+  flex-direction: column-reverse;
   justify-content: space-between;
-  padding: 15px 30px;
-  background: #042463;
-  color: white;
+  background: #01183a;
+ 
+  color: rgb(220, 213, 213);
+  width: 100%;
+  max-width: 100%;
+  height: 30px;
+ 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
-  gap: 20px;
-  position: var(100%);
+  gap: 30px;
+  
 }
 
 .navbar li {
@@ -36,16 +57,18 @@ body {
 
 
 .week {
-    flex-direction: column-reverse;
-  text-align: center;
-  padding: 40px;
-  color: white;
+  flex-direction: column-reverse;
+  text-align:center;  
+  color: rgb(13, 13, 13);
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  height: auto;
+
+
 }
-link{
-    color: black;
-}
+
 :visited{
-    color: antiquewhite;
+    color: rgb(245, 242, 239);
 }
 .cards {
   flex-direction: row-reverse;
@@ -53,13 +76,14 @@ link{
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  direction: ltr;
 }
 
 .card {
   background: white;
-  color: black;
+  display: grid;
+  color: rgb(1, 19, 54);
   width: 120px;
-  padding: 15px;
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
@@ -76,6 +100,9 @@ link{
   font-weight: bold;
   margin-top: 5px;
 }
+:link{
+  text-decoration: none;
+}
 </style>
 
 </head>
@@ -84,12 +111,13 @@ link{
 
 
 <div class="navbar">
+  
   <ul>
     <!-- <li><a href="homePage.html">🏠 کور پاڼه</a></li> -->
     <li><a href="dashboard.html">داشبورد</a></li>
-    <li>ډشبورډ</li>
-    <li>ورځنۍ</li>
-    <li>هفتواره</li>
+    
+    <li><a href="Hourlyy.html">ورځنۍ</a></li>
+    <li><a href="homePage.html">کور پاڼه</a></li>
   
   </ul>
 </div>
